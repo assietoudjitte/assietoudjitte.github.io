@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#accueil {
+    text-align: center;
+    background: #fcfcf9;
+    padding: 100px 0;
+    font-size: 20px;
+}
+    #accueil h1 {
+        color: #007bff; /* Bleu */
+    }
+
+#accueil img {
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+
+#competences .badge {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#apropos {
+    background-color: #499bec; /* Gris clair */
+    padding: 50px 0; /* Espacement interne */
+}
+
+#apropos {
+    position: relative;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+#apropos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtre sombre */
+    z-index: 1;
+}
+
+#apropos * {
+    position: relative;
+    z-index: 2;
+}
+#contact {
+    position: relative;
+    background: url('contact-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 90, 240, 0.5); /* Assombrit l'image */
+    z-index: 1;
+}
+
+#contact * {
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}

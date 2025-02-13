@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIETOU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Assietou</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Mes compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="accueil" class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>Bonjour je suis Assietou DJITTE</h1>
+                <p>Je suis un développeur passionné par le web et les nouvelles technologies.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/assi.jpg" alt="Ma photo" class="img-fluid rounded" style="height: 400px; width: 200px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="container py-5">
+        <h2>À propos de moi</h2>
+        <p>Bonjour, je suis Assietou DJITTE développeur web passionné. Spécialisé en HTML, CSS, JavaScript, WordPress et PHP, je crée des sites web modernes et performants. Mon objectif est d’offrir des solutions efficaces et adaptées aux besoins de mes clients. Toujours en quête de nouvelles technologies, j’aime relever des défis et apprendre en continu.</p>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="container py-5 text-center">
+        <h2>Mes compétences</h2>
+        <div class="d-flex justify-content-center">
+            <span class="badge bg-primary m-2">HTML/CSS</span>
+            <span class="badge bg-success m-2">JavaScript</span>
+            <span class="badge bg-warning text-dark m-2">WordPress</span>
+            <span class="badge bg-danger m-2">PHP</span>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact -->
+    <section id="contact" class="container py-5">
+        <h2>Contact</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
